@@ -1,0 +1,35 @@
+.main-heading {
+    text-align: center;
+}
+.count {
+    text-align: center; 
+}
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+.increment-btn, .save-btn {
+    background-color: darkred;
+    align-self: center;
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.save-btn {
+    background-color: green;
+    align-self: center;
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.saved-text {
+    text-align: center;
+}
