@@ -76,6 +76,7 @@ if (age < 20) {
     console.log("Welcome! to our club");
 }
 */
+/*
 let age = 100;
 if (age < 100) {
     console.log("Not eligiable");
@@ -85,3 +86,12 @@ if (age < 100) {
 else {
     console.log("Not Elegiable, You already gotten one");
 }
+*/
+
+console.log(4 === 3);
+console.log(5 > 2);
+console.log(12 > 12);
+console.log(3 < 0);
+console.log(3 <= 3);
+console.log(11 <= 11);
+console.log(3 <= 2);
