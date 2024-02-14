@@ -68,3 +68,20 @@ console.log("My points: " + 5 + 9);
 console.log(2+2);
 console.log("11" + "14");
 */
+/*
+let age = prompt("Enter Your age");
+if (age < 20) {
+    console.log("You can not enter the club");
+} else {
+    console.log("Welcome! to our club");
+}
+*/
+let age = 100;
+if (age < 100) {
+    console.log("Not eligiable");
+} else if (age === 100) {
+    console.log("Here is Your Birthday Card from King!");
+}
+else {
+    console.log("Not Elegiable, You already gotten one");
+}
