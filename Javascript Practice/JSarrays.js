@@ -68,3 +68,12 @@ let result = array1.map(element => element*2);
 console.log(result);
 */
 
+//Foreach function
+//forEach() method calls a function once for each element
+/*
+const array1 = ["a", 2, "c"];
+array1.forEach(element => console.log(element));
+*/
+const array1 = [1,2,3,4];
+let result = array1.forEach(element => element * 2);
+console.log(result);
