@@ -74,6 +74,51 @@ console.log(result);
 const array1 = ["a", 2, "c"];
 array1.forEach(element => console.log(element));
 */
+
+// Reduce function
+// reduce() function excutes a reducer function for each array value and it 
+// return single value which is function accumalted result 
+// it does not change the original array
+/*
 const array1 = [1,2,3,4];
-let result = array1.forEach(element => element * 2);
-console.log(result);
+function reducer(previousValue,currentValue) {
+    return (previousValue * currentValue);
+}
+console.log(array1.reduce(reducer));
+*/
+
+// Slice function 
+// slice() function returns selected elements of existing array into new array
+// it does not change the original
+// it takes two parametters start and end
+/*
+const animals = ["ant", "owl", "camel", "duck", "elephant"];
+console.log(animals.slice(2));
+console.log(animals.slice(2,4));
+console.log(animals.slice(1,5));
+console.log(animals.slice(-2));
+console.log(animals.slice(2,-1));
+*/
+
+// Pop function
+// pop() function removes the last element of array and returns it
+// pop changes the length of the array  
+/*
+const plants = ["broccoli", "onion", "cabbage", "tomato"];
+console.log(plants.pop());
+console.log(plants);
+console.log(plants.pop());
+console.log(plants);
+*/
+
+// Push function
+// push() functions add new items at the end of the Array
+// it changes the length and returns new length
+const animals = ["pigs", "goats", "sheep"];
+const count = animals.push("cow");
+console.log(count);
+console.log(animals);
+animals.push("chickens", "cats", "dogs");
+console.log(animals);
+animals.unshift("firstAnimal");
+console.log(animals);
