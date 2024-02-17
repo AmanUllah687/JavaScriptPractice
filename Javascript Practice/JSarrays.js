@@ -27,11 +27,11 @@ for (let e of itterator) {
     console.log(e);
 }
 */
+
 // Fill Function
 // fill function functions fill the specified elements in an array with static value
 // you have to specify the position if not specified it can fill all elements and 
 // it ruturns changed array
-/*
+
 const array1 = [1,2,3,4]
 console.log(array1.fill(0,2,3));
-*/
