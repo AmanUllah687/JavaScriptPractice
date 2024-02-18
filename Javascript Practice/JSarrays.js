@@ -109,11 +109,14 @@ console.log(plants.pop());
 console.log(plants);
 console.log(plants.pop());
 console.log(plants);
+const plants = ["broccoli", "onion", "cabbage", "tomato"];
+console.log(plants.shift());
 */
 
 // Push function
 // push() functions add new items at the end of the Array
 // it changes the length and returns new length
+/*
 const animals = ["pigs", "goats", "sheep"];
 const count = animals.push("cow");
 console.log(count);
@@ -122,3 +125,36 @@ animals.push("chickens", "cats", "dogs");
 console.log(animals);
 animals.unshift("firstAnimal");
 console.log(animals);
+*/
+
+// Flat function
+// flat method() creates a new array with alll the elements of the sub array concated 
+// recursively upto specfic depth
+// by default the depth is 1 we can use infinity parametter for all sub arrays
+/*
+const numbrs = [1,2,[3,4,5]];
+const flatNumbers = numbrs.flat(2);
+console.log(flatNumbers);
+const numbers1 = [1,2,[3,4,5],[6,7]];
+const flatNumbers1 = numbers1.flat(2);
+console.log(flatNumbers1);
+const numbers2 = [1,2,[3,4,5],[6,7],[8,9],[10,11]];
+const flatNumbers2 = numbers2.flat(Infinity);
+console.log(flatNumbers2);
+*/
+
+// Sort function
+// sort() method sorts an array Alphabettically
+// it changes orginal Array
+/*
+const fruits = ["Banana", "Apple", "Orange", "Mango"];
+console.log(fruits.sort());
+*/
+
+// Reverse function
+// reverse methodreverse the elements in an array 
+// it changes orginal Array
+/*
+const fruits = [1,2,3,4,5,6,7,8];
+console.log(fruits.reverse());
+*/
