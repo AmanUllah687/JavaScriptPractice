@@ -154,7 +154,5 @@ console.log(fruits.sort());
 // Reverse function
 // reverse methodreverse the elements in an array 
 // it changes orginal Array
-/*
 const fruits = [1,2,3,4,5,6,7,8];
 console.log(fruits.reverse());
-*/
