@@ -91,9 +91,18 @@ console.log(multiply(5,5));  // 25
 */
 
 // JS functions- Agrgument object
+/*
 function myConcat(separator) {
     var result = '';
     // iterate through arguments
-    for (let i=1; i<arguments.length; i++);
-    
+    for (let i = 1; i<arguments.length; i++)
+    result += arguments[i] + separator;
+    return result;
 }
+var result = myConcat(',', 'red', 'orange', 'blue');
+console.log(result);
+var result = myConcat(';', 'elephant', 'girafe', 'lion', 'cheetah');
+console.log(result);
+var result = myConcat('.', 'sage', 'basil', 'o regano', 'peper', 'parsley')
+console.log(result);
+*/
