@@ -253,6 +253,9 @@ console.log(rect.Hieght); // 10
 rect.setHieght(25);
 console.log(rect.Hieght);
 */
+
+// Inheritance
+/*
  class Animal {
   constructor(name) {
     this.name = name;
@@ -271,3 +274,21 @@ console.log(rect.Hieght);
  }
  var d = new Dog(`Random Dog`);
  console.log(d.speak());
+*/
+  
+
+// solving Problem 
+ class Employee {
+  constructor(name,dept) {
+    this.name = ""
+    this.dept = "General"
+  }
+ }
+ class Manager extends Employee {
+  constructor(reports) {
+    this.report = [];
+  }
+ }
+ var rect = new Employee();
+ console.log(rect.dept);
+ 
