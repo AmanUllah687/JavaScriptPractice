@@ -186,6 +186,9 @@ console.log(rect.Hieght);
 rect.setHieght(20);
 console.log(rect.Hieght);
 */
+
+// Static Methods
+/*
  class Point {
   constructor(x, y) {
     this.x = x;
@@ -202,3 +205,69 @@ const p2 = new Point(10,10);
 p1.distance;
 p2.distance;
 console.log(Point.distance(p1, p2));
+*/
+// Public field declarations
+/*
+class Rectangle {
+  hieght = 0;
+  width;
+  constructor(hieght, width) {
+    this.hieght = hieght;
+    this.width = width;
+  }
+  get Hieght() {
+      return this.hieght;
+  }
+  setHieght(hieght) {
+    this.hieght = hieght;
+  }
+}
+var rect = new Rectangle(10,15);
+console.log(`Hieght of Rectangle is ${rect.Hieght} cm`);
+// Hieght of Rectangle is 10 cm
+console.log(rect.Hieght);
+// 10
+rect.setHieght(20);
+console.log(rect.Hieght);
+// 20
+*/
+// Private field declarations
+/*
+class Rectangle {
+  #hieght = 0;
+  #width;
+  constructor(hieght,width) {
+    this.#hieght = hieght;
+    this.#width = width;
+  }
+  get Hieght() {
+    return this.#hieght;
+  }
+  setHieght(hieght) {
+    this.#hieght = hieght;
+  }
+}
+var rect = new Rectangle(10,15);
+console.log(`Hieght of Rectangle is ${rect.Hieght} cm`); // Hieght of rectangle is 10 cm 
+console.log(rect.Hieght); // 10
+rect.setHieght(25);
+console.log(rect.Hieght);
+*/
+ class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(`${this.name} makes a noise`);
+  }
+ }
+ class Dog extends Animal {
+  constructor(name) {
+    super(name);
+  }
+  speak() {
+    console.log(`${this.name} barks`);
+  }
+ }
+ var d = new Dog(`Random Dog`);
+ console.log(d.speak());
