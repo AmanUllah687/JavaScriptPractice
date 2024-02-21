@@ -278,6 +278,7 @@ console.log(rect.Hieght);
   
 
 // solving The Problem of Simple Project Hierarchy
+/*
  class Employee {
   constructor(name,dept) {
     this.name = ""
@@ -315,5 +316,27 @@ console.log(rect.Hieght);
  var obj = new Engineer();
  const value = obj.dept;
  console.log(value);
-
+ */
+ class Calculator {
+  constructor (a,b) {
+    this.a = a;
+    this.b = b;
+  }
+  Addition() {
+    return this.a + this.b;
+  }
+  Substraction() {
+    return this.a - this.b;
+  }
+  Multiplication() {
+    return this.a * this.b;
+  }
+  getdivide() {
+    return this.a / this.b;
+  }
+ }
+ var result = new Calculator(10,5);
+ let value  = result.getdivide();
+ console.log(value);
+ 
  
