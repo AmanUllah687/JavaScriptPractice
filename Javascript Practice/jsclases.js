@@ -277,7 +277,7 @@ console.log(rect.Hieght);
 */
   
 
-// solving Problem 
+// solving The Problem of Simple Project Hierarchy
  class Employee {
   constructor(name,dept) {
     this.name = ""
@@ -285,10 +285,35 @@ console.log(rect.Hieght);
   }
  }
  class Manager extends Employee {
+  
   constructor(reports) {
-    this.report = [];
+    reports = [];
+    super(reports); 
   }
  }
- var rect = new Employee();
- console.log(rect.dept);
+ class WorkerBee extends Employee {
+  constructor(projects) {
+    projects = "";
+    super(projects);
+    this.projects = [""]
+  }
+ }
+  class SalesPerson extends WorkerBee {
+    constructor(qouta) {
+      qouta = 100;
+      super(qouta);
+      this.dept = "sales"
+    }
+  }
+  class Engineer extends WorkerBee {
+    constructor(machine) {
+      machine = "";
+      super(machine);
+      this.dept = "Engineering";
+    }
+  }
+ var obj = new Engineer();
+ const value = obj.dept;
+ console.log(value);
+
  
