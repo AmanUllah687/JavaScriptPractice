@@ -113,6 +113,22 @@ console.log(Aman[2]);
     "I am right, thank you! How about you?",
     "All good been working on my portfolio lately"
  ];
+ for (let i=0; i<4; i++) {
+    console.log(message[i]);
+ }
  let newMessage = "Same here!";
  message.push("Same here");
  console.log(message);
+ message.pop("Same here");
+ console.log(message);
+ /*
+for (let count=10; count<21; count++) {
+    console.log(count);
+}
+for (let i=1; i<11; i += 2) {
+    console.log(i);
+}
+for (j=10; j<101; j +=10) {
+    console.log(j);
+}
+*/
