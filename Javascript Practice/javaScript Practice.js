@@ -87,7 +87,7 @@ else {
     console.log("Not Elegiable, You already gotten one");
 }
 */
-
+/*
 console.log(4 === 3);
 console.log(5 > 2);
 console.log(12 > 12);
@@ -95,3 +95,24 @@ console.log(3 < 0);
 console.log(3 <= 3);
 console.log(11 <= 11);
 console.log(3 <= 2);
+*/
+/*
+const Aman = ["wordpress Develpor", "Bachelors in Computer Science", "Driving license", "Html", "Css", "JavaScript"];
+console.log(Aman[0]);
+console.log(Aman[1]);
+console.log(Aman[2]);
+*/
+/*
+ const Aman = ["Aman", 25, true];
+ let cards = [4,7];
+ cards.push(6);
+ console.log(cards);
+ */
+ let message = [
+    "Hey how's it going?",
+    "I am right, thank you! How about you?",
+    "All good been working on my portfolio lately"
+ ];
+ let newMessage = "Same here!";
+ message.push("Same here");
+ console.log(message);

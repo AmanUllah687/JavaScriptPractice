@@ -338,5 +338,3 @@ console.log(rect.Hieght);
  var result = new Calculator(10,5);
  let value  = result.getdivide();
  console.log(value);
- 
- 
