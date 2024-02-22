@@ -150,8 +150,74 @@ for (let i=0; i<card.length; i++) {
     console.log(card[i]);
 }
 */ 
+/*
 let sentence = ["Hello", "my", "name", "is", "aman"];
 let greetingEl = document.getElementById("welcome-el");
 for(let i=0; i<sentence.length; i++) {
     greetingEl.textContent += sentence[i] + " ";
+}
+*/
+/*
+let player1time = 102;
+let player2time = 107;
+ function getFastestRaceTime() {
+    if(player1time<player2time) {
+        return player1time;
+    }
+    else if(player2time<player1time) {
+        return player2time;
+    }
+    else {
+        return player1time;
+    }
+ }
+ let raceTime = getFastestRaceTime();
+ console.log(raceTime);
+ */
+/*
+ let player1time = 102;
+ let player2time = 107;
+  function totalRaceTime() {
+    return player1time + player2time;
+  }
+  let totalTime = totalRaceTime();
+  console.log(totalTime);
+  */
+ /*
+ let randomnumber = rollDice();
+ function rollDice() {
+    return Math.floor(Math.random() * 6) + 1;
+ }
+ console.log(randomnumber);// 0,1,2,3,4,5
+ */
+
+ // let flooredNumber = Math.floor(4.45362);
+// console.log(flooredNumber);
+/*
+let hascompletedcourse = true;
+let givesCertificate = true;
+if (hascompletedcourse === true && givesCertificate === true) {
+        generateCertificate();
+}
+function generateCertificate() {
+    console.log("Generating certificate");
+}
+*/
+/*
+let hasSolvedChallenge = false;
+let hasHintLefts = false;
+if(hasSolvedChallenge === false && hasHintLefts === false) {
+    showSoloution();
+}
+function showSoloution() {
+    console.log("Showing the soloution");
+}
+*/
+let likeDocumentries = false;
+let likeStartups = false;
+if(likeDocumentries === true || likeStartups === true) {
+    recomendMovie();
+}
+function recomendMovie() {
+    console.log("Hey, checkout this new movie we think you will like!");
 }
