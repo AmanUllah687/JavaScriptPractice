@@ -114,7 +114,7 @@ console.log(Aman[2]);
     "I am right, thank you! How about you?",
     "All good been working on my portfolio lately"
  ];
- for (let i=0; i<4; i++) {
+ for (let i=0; i<message.length; i++) {
     console.log(message[i]);
  }
  let newMessage = "Same here!";
@@ -134,6 +134,7 @@ for (j=10; j<101; j +=10) {
     console.log(j);
 }
 */
+/*
 let sum = 0;
 for (i=1; i<1001; i++) {
    if(i%3 === 0 || i%5=== 0) {
@@ -142,3 +143,15 @@ for (i=1; i<1001; i++) {
 
 }
 console.log(sum);
+*/
+/*
+let card = [7,3,9];
+for (let i=0; i<card.length; i++) {
+    console.log(card[i]);
+}
+*/ 
+let sentence = ["Hello", "my", "name", "is", "aman"];
+let greetingEl = document.getElementById("welcome-el");
+for(let i=0; i<sentence.length; i++) {
+    greetingEl.textContent += sentence[i] + " ";
+}
