@@ -108,6 +108,7 @@ console.log(Aman[2]);
  cards.push(6);
  console.log(cards);
  */
+/*
  let message = [
     "Hey how's it going?",
     "I am right, thank you! How about you?",
@@ -121,6 +122,7 @@ console.log(Aman[2]);
  console.log(message);
  message.pop("Same here");
  console.log(message);
+ */
  /*
 for (let count=10; count<21; count++) {
     console.log(count);
@@ -132,3 +134,6 @@ for (j=10; j<101; j +=10) {
     console.log(j);
 }
 */
+for (let i=3; i<101; i += 2) {
+    console.log(i);
+}
