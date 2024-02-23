@@ -13,23 +13,56 @@ console.log(sum);
 */
 
 // Project Eular Problem 2
+/*
 let fibonacciSeries = [0, 1];
+let sum;
 function generateFibonacci(n) {
    
 
    for (let i = 2; i < 10; i++) {
-       fibonacciSeries[i] = fibonacciSeries[i - 1] + fibonacciSeries[i - 2];
-       let sum = 0;
-       if( num % 2 === 0) {
-         sum += num;
+       if( i % 2 === 0) {
+         fibonacciSeries[i] = fibonacciSeries[i - 1] + fibonacciSeries[i - 2];
+         sum += i;
       }
    }
-   return fibonacciSeries;
-}
-function sumOfEvenNumbers(fibonacciSeries) {
-   let sum = 0;
-   for(let num of result) {
-      
    return sum;
 }
+console.log(sum);
+*/
+/*
+function generateFibonacci(n) {
+   let fibonacciSeries = [0, 1];
+
+   for (let i = 2; i < 10; i++) {
+       fibonacciSeries[i] = fibonacciSeries[i - 1] + fibonacciSeries[i - 2];
+   }
+
+   return fibonacciSeries;
+}
+
+function sumOfEvenNumbers(fibonacciSeries) {
+   let sum = 0;
+
+   for (let num of fibonacciSeries) {
+       if (num % 2 === 0) {
+           sum += num;
+       }
+   }
+
+   return sum;
+}
+console.log(generateFibonacci());
 console.log(sumOfEvenNumbers());
+*/
+let fibonacciSeries = [0, 1];
+for (let i = 2; i < 4000000; i++) {
+      fibonacciSeries[i] = fibonacciSeries[i - 1] + fibonacciSeries[i - 2];
+}
+let sum = 0
+for(let num of fibonacciSeries) {
+if( num%2 == 0) {
+   sum += num;
+}
+}
+console.log(fibonacciSeries);
+console.log(sum);
