@@ -235,6 +235,7 @@ let course = {
 }
 console.log(course["tags"]);
 */
+/*
 let castle = {
     title: "live like a king in my castle",
     price: 190,
@@ -243,3 +244,68 @@ let castle = {
 }
 console.log(castle.price);
 console.log(castle.isSuperHost);
+*/
+// BlackJack app recap exercises
+// Objects and functions
+/*
+let person = {
+    name: "Aman",
+    age: 25,
+    country: "Pakistan"
+}
+ function logData() {
+    console.log(`${person.name} is ${person.age} years old and lives in ${person.country}`);
+}
+console.log(logData());
+*/
+// Conditional Statements
+/*
+let age = 70;
+if (age < 6) {
+    console.log("Free");
+}
+else if(age < 18) {
+    console.log("Child discount");
+}
+else if(age < 27  ) {
+    console.log("Student Discount");
+}
+else if(age < 67) {
+    console.log("Full Price");
+}
+else {
+    console.log("Senior citizenship Discount")
+}
+*/
+// for loops 
+/*
+let largeCountries = ["China", "India", "Usa", "Indonessia", "Pakistan"];
+console.log("The 5 largest countries in the world:");
+for(let i=0; i<largeCountries.length; i++) {
+    console.log("_" + largeCountries[i]);
+}
+*/
+// Push() pop() shift() unshif() Challenge 
+/*
+let largeCountries = ["Tuvalu", "India", "Usa", "Indonessia", "Monaco"];
+largeCountries.pop();
+console.log(largeCountries);
+largeCountries.push("Pakistan");
+console.log(largeCountries);
+largeCountries.shift();
+console.log(largeCountries);
+largeCountries.unshift("China");
+console.log(largeCountries);
+*/
+//logicla operators 
+/*
+let dayOfMonth = 13;
+let weekDay = "Friday";
+if (dayOfMonth === 13 && weekDay === "Friday") {
+    console.log(":)");
+}
+*/
+// Rock paper Scisors
+let hands = ["Rock", "Paper", "Scisors"];
+function getHand() {
+}
