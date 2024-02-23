@@ -306,6 +306,26 @@ if (dayOfMonth === 13 && weekDay === "Friday") {
 }
 */
 // Rock paper Scisors
+/*
 let hands = ["Rock", "Paper", "Scisors"];
 function getHand() {
+    let randomIndex = Math.floor(Math.random() * 3);
+    return hands[randomIndex];
 }
+console.log(getHand());
+*/
+// sorting fruits array
+let fruit = ["Apple", "Orange", "Apple", "Apple", "orange"];
+let appleShelf = document.getElementById("apple-shelf");
+let orangeShelf = document.getElementById("orange-shelf");
+ function sortFruit() {
+    for(let i=0; i<fruit.length; i++) {
+        if(fruit[i] === "Apple") {
+            appleShelf.textContent += "Apple"; 
+        }
+        else if(fruit[i] === "Orange") {
+            orangeShelf.textContent += "Orange";
+        }
+    } 
+ }
+ sortFruit();
