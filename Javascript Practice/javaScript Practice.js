@@ -213,6 +213,7 @@ function showSoloution() {
     console.log("Showing the soloution");
 }
 */
+/*
 let likeDocumentries = false;
 let likeStartups = false;
 if(likeDocumentries === true || likeStartups === true) {
@@ -221,3 +222,24 @@ if(likeDocumentries === true || likeStartups === true) {
 function recomendMovie() {
     console.log("Hey, checkout this new movie we think you will like!");
 }
+*/
+/*
+let course = {
+    title: "lear css grid for free",
+    lessons: 16,
+    creater: "Aman",
+    length:    63,
+    level: 2,
+    isfree: true,
+    tags: ["html", "css"]
+}
+console.log(course["tags"]);
+*/
+let castle = {
+    title: "live like a king in my castle",
+    price: 190,
+    isSuperHost: true,
+    images: ["img/castle1.png", "img/castle2.png"]
+}
+console.log(castle.price);
+console.log(castle.isSuperHost);
