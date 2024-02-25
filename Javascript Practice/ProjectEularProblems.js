@@ -24,3 +24,11 @@ if( num%2 == 0) {
 }
 }
 console.log(sum);
+// project eular problem 3
+let num = [];
+for(let i=2; i<=98; i++){
+   if(i%i===0  && i%1===0){
+   num = i;
+   }
+}
+console.log(num);
