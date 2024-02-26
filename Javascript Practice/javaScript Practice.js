@@ -331,7 +331,25 @@ let orangeShelf = document.getElementById("orange-shelf");
  }
  sortFruit();
  */
+// Adding Event lisner 
+/*
 let boxEl = document.getElementById("box-el");
 boxEl.addEventListener("click", function() {
     console.log("I want to open the box!");
 });
+*/
+/*
+const playerName = "Aman";
+let credits = 45;
+credits = credits -10
+console.log(credits);
+*/
+const  basePrice = 520;
+const  discount = 120;
+let shipingCost = 12;
+let shipingtime = "5-12 days";
+
+shipingCost = 15;
+shipingtime = "7-14 days";
+const fullPrice = basePrice - discount + shipingCost;
+ console.log("Totalcost: " + fullPrice + " it will arive in " + shipingtime);
