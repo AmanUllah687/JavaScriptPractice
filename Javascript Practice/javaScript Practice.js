@@ -315,6 +315,7 @@ function getHand() {
 console.log(getHand());
 */
 // sorting fruits array
+/*
 let fruit = ["Apple", "Orange", "Apple", "Apple", "orange"];
 let appleShelf = document.getElementById("apple-shelf");
 let orangeShelf = document.getElementById("orange-shelf");
@@ -329,3 +330,8 @@ let orangeShelf = document.getElementById("orange-shelf");
     } 
  }
  sortFruit();
+ */
+let boxEl = document.getElementById("box-el");
+boxEl.addEventListener("click", function() {
+    console.log("I want to open the box!");
+});
