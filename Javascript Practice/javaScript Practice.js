@@ -344,6 +344,8 @@ let credits = 45;
 credits = credits -10
 console.log(credits);
 */
+// let and const
+/*
 const  basePrice = 520;
 const  discount = 120;
 let shipingCost = 12;
@@ -353,3 +355,9 @@ shipingCost = 15;
 shipingtime = "7-14 days";
 const fullPrice = basePrice - discount + shipingCost;
  console.log("Totalcost: " + fullPrice + " it will arive in " + shipingtime);
+ */
+// Template littrals
+const recipient = "james"
+// const email = "Hey " + recipient + "! How is it going? cheers per";
+const email = `Hey ${recipient} ! How is it going? cheers per.`;
+console.log(email);
