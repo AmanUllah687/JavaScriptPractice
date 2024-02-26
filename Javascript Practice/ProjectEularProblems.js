@@ -13,6 +13,7 @@ console.log(sum);
 */
 
 // Project Eular Problem 2
+/*
 let fibonacciSeries = [0, 1];
 for (let i = 2; i < 4000000; i++) {
       fibonacciSeries[i] = fibonacciSeries[i - 1] + fibonacciSeries[i - 2];
@@ -24,11 +25,15 @@ if( num%2 == 0) {
 }
 }
 console.log(sum);
+*/
 // project eular problem 3
-let num = [];
-for(let i=2; i<=98; i++){
-   if(i%i===0  && i%1===0){
-   num = i;
-   }
+let largestPrimeFactor = 2;
+
+  for (let divisor = 2; number > 1; divisor++) {
+    while (number % divisor === 0) {
+      largestPrimeFactor = divisor;
+      number /= divisor;
+    }
+  return largestPrimeFactor;
 }
-console.log(num);
+console.log(largestPrimeFactor);
