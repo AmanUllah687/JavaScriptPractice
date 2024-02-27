@@ -357,7 +357,10 @@ const fullPrice = basePrice - discount + shipingCost;
  console.log("Totalcost: " + fullPrice + " it will arive in " + shipingtime);
  */
 // Template littrals
-const recipient = "james"
+const recipient = "james";
+const sender = "Per Harald Borgan";
 // const email = "Hey " + recipient + "! How is it going? cheers per";
-const email = `Hey ${recipient} ! How is it going? cheers per.`;
+const email = `Hey ${recipient} !
+How is it going? 
+cheers ${sender}.`;
 console.log(email);
