@@ -1,9 +1,12 @@
-let myLeads = [];
+let myLeads = `["www.awesomelead.com"]`;
+myLeads = JSON.parse(myLeads);
+myLeads.push("www.epiclead.com");
+console.log(myLeads);
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
-// localStorage.setItem("myleads" , "www.examplelead.com");
- console.log(localStorage.getItem("myleads"));
+// let Name = localStorage.getItem("myName");
+// console.log(Name);
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
     inputEl.value = "";
