@@ -27,6 +27,7 @@ if( num%2 == 0) {
 console.log(sum);
 */
 // Problem 3 finding the HCF of two numbers 
+/*
  const number1 = 24;
  const number2 = 36;
  let hcf;
@@ -36,6 +37,7 @@ console.log(sum);
     }
  }
  console.log(`HCF of ${number1} and ${number2} is ${hcf}`);
+ */
  function lcmFunction(a, b) {
   let larger = Math.max(a, b);
   let smaller = Math.min(a, b);
