@@ -26,7 +26,30 @@ if( num%2 == 0) {
 }
 console.log(sum);
 */
-// project eular problem 3
+// Problem 3 finding the HCF of two numbers 
+ const number1 = 24;
+ const number2 = 36;
+ let hcf;
+ for (let i=1; i<= number1 && i<= number2; i++) {
+    if(number1 % i == 0 && number2 % i == 0) {
+      hcf = i;
+    }
+ }
+ console.log(`HCF of ${number1} and ${number2} is ${hcf}`);
+ function lcmFunction(a, b) {
+  let larger = Math.max(a, b);
+  let smaller = Math.min(a, b);
+  for (let i = larger; ; i += larger) {
+      if (i % smaller === 0) {
+          return i;
+      }
+  }
+};
+let LCM = lcmFunction(49,56);
+console.log(LCM);
+
+// project eular problem 4
+/*
 let largestPrimeFactor = 2;
 
   for (let divisor = 2; number > 1; divisor++) {
@@ -37,3 +60,4 @@ let largestPrimeFactor = 2;
   return largestPrimeFactor;
 }
 console.log(largestPrimeFactor);
+*/
