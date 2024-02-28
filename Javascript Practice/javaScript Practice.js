@@ -366,7 +366,20 @@ How is it going?
 cheers ${sender}.`;
 console.log(email);
 */
+/*
 let Maxnumber = Math.max(49,56);
 console.log(Maxnumber);
 let Minnumber = Math.min(49,56);
 console.log(Minnumber);
+*/
+/*
+let currentViewvers = null;
+currentViewvers = ["jane", "nick"];
+currentViewvers = 0;
+
+if(currentViewvers) {
+    console.log("We have viewvers");
+}
+*/
+let trueOfFalse = Boolean("HEllo");
+console.log(trueOfFalse);
