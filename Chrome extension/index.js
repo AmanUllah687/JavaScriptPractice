@@ -1,16 +1,21 @@
-let myLeads = `["www.awesomelead.com"]`;
-myLeads = JSON.parse(myLeads);
-myLeads.push("www.epiclead.com");
-console.log(myLeads);
+let myLeads = [];
+// myLeads = JSON.parse(myLeads);
+// myLeads.push("www.epiclead.com");
+// myLeads = JSON.stringify(myLeads);
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 // let Name = localStorage.getItem("myName");
 // console.log(Name);
-inputBtn.addEventListener("click", function() {
+localStorage.clear();
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+console.log(leadsFromLocalStorage);
+ inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
     inputEl.value = "";
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
     renderLead();
+    // console.log(localStorage.getItem("myLeads"));
 });
 function renderLead() {
 let listItem = "";
@@ -22,7 +27,7 @@ for(i=0; i<myLeads.length; i++) {
       </a>
       </li>
       `
-     console.log(listItem);
+     // console.log(listItem);
     // const li = document.createElement("li");
     // li.textContent = myLeads[i];
     // ulEl.append(li);
