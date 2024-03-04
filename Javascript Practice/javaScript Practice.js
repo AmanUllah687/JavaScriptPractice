@@ -383,10 +383,32 @@ if(currentViewvers) {
 */
 // let trueOfFalse = Boolean("HEllo");
 // console.log(trueOfFalse);
+/*
 console.log(Boolean(""));
 console.log(Boolean (0));
 console.log(Boolean(100));
 console.log(Boolean(null));
 console.log([0]);
 console.log(Boolean (0));
+*/
+/*
+const numbers = [1,4,2,6,2];
+const isEqual = (element) => element === 2;
+let index1 = numbers.findIndex(isEqual);
+let index2 = numbers.findLastIndex(isEqual);
+console.log(`The value 2 is at index of ${index1} and ${index2} of given array`);
+*/
+let arr = [1,4,2,6,2];
+function findIndex(arr,targetValue) {
+    for(let i=0; i<arr.length; i++) {
+       if(arr[i] === targetValue) {
+        return i
+       }
+    }
+}
+let targetValue = 2;
+let index = findIndex(arr, targetValue);
+console.log(index);
+
+
 

@@ -63,3 +63,11 @@ let largestPrimeFactor = 2;
 }
 console.log(largestPrimeFactor);
 */
+// finding the index of traget value in a array
+/*
+const numbers = [1,4,2,6,2];
+const isEqual = (element) => element === 2;
+let index1 = numbers.findIndex(isEqual);
+let index2 = numbers.findLastIndex(isEqual);
+console.log(`The value 2 is at index of ${index1} and ${index2} of given array`);
+*/
