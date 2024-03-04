@@ -398,6 +398,7 @@ let index1 = numbers.findIndex(isEqual);
 let index2 = numbers.findLastIndex(isEqual);
 console.log(`The value 2 is at index of ${index1} and ${index2} of given array`);
 */
+/*
 let arr = [1,4,2,6,2];
 function forEach(arr,targetValue) {
     for(let i=0; i<arr.length; i++) {
@@ -410,6 +411,39 @@ let targetValue = 2;
 let index = forEach(arr, targetValue);
 let indexlast = arr.findLastIndex();
 console.log(`${index} and ${indexlast}}`);
+*/
+/*
+function add(a,b) {
+    return a + b;
+}
+console.log(add(3,4));
+console.log(add(9,102));
+*/
+/*
+function getFirst(arr) {
+    return arr[0];
+}
+let firstCard = getFirst([10,2,5]);
+console.log(firstCard);
+*/
+// Setting the Stage
+const player = "Per";
+const opponent = "Nick";
+const game = "Amazing fighter";
+let points = 0;
+let hasWon = false;
+
+// Playing the game
+points += 100;
+hasWon = true;
+
+if(hasWon) {
+    console.log(`${player} got ${points} point and won the ${game} game!`);
+}
+else {
+    console.log(`The winner is ${opponent}! ${player} lost the game`);
+}
+
 
 
 
