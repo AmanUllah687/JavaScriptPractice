@@ -399,7 +399,7 @@ let index2 = numbers.findLastIndex(isEqual);
 console.log(`The value 2 is at index of ${index1} and ${index2} of given array`);
 */
 let arr = [1,4,2,6,2];
-function findIndex(arr,targetValue) {
+function forEach(arr,targetValue) {
     for(let i=0; i<arr.length; i++) {
        if(arr[i] === targetValue) {
         return i
@@ -407,8 +407,9 @@ function findIndex(arr,targetValue) {
     }
 }
 let targetValue = 2;
-let index = findIndex(arr, targetValue);
-console.log(index);
+let index = forEach(arr, targetValue);
+let indexlast = arr.findLastIndex();
+console.log(`${index} and ${indexlast}}`);
 
 
 

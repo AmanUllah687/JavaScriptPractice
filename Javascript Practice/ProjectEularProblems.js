@@ -38,6 +38,7 @@ console.log(sum);
  }
  console.log(`HCF of ${number1} and ${number2} is ${hcf}`);
  */
+/*
  function lcmFunction(a, b) {
   let larger = Math.max(a, b);
   let smaller = Math.min(a, b);
@@ -49,6 +50,7 @@ console.log(sum);
 };
 let LCM = lcmFunction(49,56);
 console.log(LCM);
+*/
 
 // project eular problem 4
 /*
@@ -71,3 +73,15 @@ let index1 = numbers.findIndex(isEqual);
 let index2 = numbers.findLastIndex(isEqual);
 console.log(`The value 2 is at index of ${index1} and ${index2} of given array`);
 */
+let arr = [1,4,2,6,2];
+function forEach(arr,targetValue) {
+    for(let i=0; i<arr.length; i++) {
+       if(arr[i] === targetValue) {
+        return i
+       }
+    }
+}
+let targetValue = 2;
+let index = forEach(arr, targetValue);
+let indexlast = arr.findLastIndex();
+console.log(`${index} and ${indexlast}}`);
