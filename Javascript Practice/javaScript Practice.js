@@ -426,6 +426,7 @@ function getFirst(arr) {
 let firstCard = getFirst([10,2,5]);
 console.log(firstCard);
 */
+/*
 // Setting the Stage
 const player = "Per";
 const opponent = "Nick";
@@ -443,6 +444,35 @@ if(hasWon) {
 else {
     console.log(`The winner is ${opponent}! ${player} lost the game`);
 }
+*/
+/*
+let myCourses =["learn Cs Animattion", "Ux Design fundamentals", "Intro to clean Code"];
+
+function logItems(arr) {
+    for(let i=0; i<arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+logItems(myCourses);
+*/
+/*
+let credits = localStorage.getItem("myCredit");
+console.log(credits);
+*/
+function generateSentance(desc, array) {
+    let baseString = `The ${array.length} ${desc} are `;
+    const lastIndex = array.length -1;
+    for(let i=0; i<array.length; i++) {
+        if(i=== lastIndex){
+     baseString += array[i];
+        } else {
+            baseString += array[i] + ", ";
+        }
+    }
+    return baseString;
+}
+let sentence = generateSentance("highest mountains", ["MountEverset","k2"]);
+console.log(sentence);
 
 
 
