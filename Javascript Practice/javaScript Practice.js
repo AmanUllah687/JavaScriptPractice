@@ -459,6 +459,7 @@ logItems(myCourses);
 let credits = localStorage.getItem("myCredit");
 console.log(credits);
 */
+/*
 function generateSentance(desc, array) {
     let baseString = `The ${array.length} ${desc} are `;
     const lastIndex = array.length -1;
@@ -473,7 +474,14 @@ function generateSentance(desc, array) {
 }
 let sentence = generateSentance("highest mountains", ["MountEverset","k2"]);
 console.log(sentence);
-
+*/
+try {
+    (5).toUpperCase();
+}
+catch(e) {
+    console.log(`Ooops you cant uppercase a number.
+    Trying to do it resulated in the folowing`);
+}
 
 
 
