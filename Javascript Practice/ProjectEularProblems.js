@@ -11,13 +11,16 @@ for (i=1; i<1000; i++) {
 }
 console.log(sum);
 */
-
 // Project Eular Problem 2
 /*
-let fibonacciSeries = [0, 1];
-for (let i = 2; i < 4000000; i++) {
-      fibonacciSeries[i] = fibonacciSeries[i - 1] + fibonacciSeries[i - 2];
+let fibonacciSeries = [1, 2]; 
+for (let i = 2; ; i++) {
+    let nextFibonacci = fibonacciSeries[i - 1] + fibonacciSeries[i - 2]; 
+    if (nextFibonacci > 4000000) break;
+    fibonacciSeries.push(nextFibonacci);
 }
+
+console.log(fibonacciSeries);
 let sum = 0
 for(let num of fibonacciSeries) {
 if( num%2 == 0) {
@@ -52,7 +55,7 @@ let LCM = lcmFunction(49,56);
 console.log(LCM);
 */
 
-// project eular problem 4
+// project eular problem 3
 /*
 let largestPrimeFactor = 2;
 
@@ -65,6 +68,23 @@ let largestPrimeFactor = 2;
 }
 console.log(largestPrimeFactor);
 */
+/*
+function findLargestPrimeFactor(number) {
+  let largestPrimeFactor = 2;
+
+  for (let divisor = 2; number > 1; divisor++) {
+      while (number % divisor === 0) {
+          largestPrimeFactor = divisor;
+          number /= divisor;
+      }
+  }
+  return largestPrimeFactor;
+}
+
+const number = 600851475143;
+const largestPrimeFactor = findLargestPrimeFactor(number);
+console.log("Largest Prime Factor:", largestPrimeFactor);
+*/
 // finding the index of traget value in a array
 /*
 const numbers = [1,4,2,6,2];
@@ -73,6 +93,7 @@ let index1 = numbers.findIndex(isEqual);
 let index2 = numbers.findLastIndex(isEqual);
 console.log(`The value 2 is at index of ${index1} and ${index2} of given array`);
 */
+/*
 let arr = [1,4,2,6,2];
 function forEach(arr,targetValue) {
     for(let i=0; i<arr.length; i++) {
@@ -85,3 +106,4 @@ let targetValue = 2;
 let index = forEach(arr, targetValue);
 let indexlast = arr.findLastIndex();
 console.log(`${index} and ${indexlast}}`);
+*/
